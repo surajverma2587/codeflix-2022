@@ -8,12 +8,29 @@
   --movie-price: #f5c518;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   margin: 0;
+  min-height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  background-color: var(--dark);
+  color: #fff;
+}
+
+/* header styles */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6.8rem;
   background-color: var(--dark);
 }
 
@@ -54,5 +71,10 @@ body {
   .nav-links-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .header {
+    position: static;
+    height: 100%;
   }
 }
