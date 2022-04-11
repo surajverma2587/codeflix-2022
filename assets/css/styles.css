@@ -1,5 +1,20 @@
+:root {
+  --dark: #141414;
+  --dark-rgb: 20, 20, 20;
+  --font-info: #e5e5e5;
+  --font-hover: #e5e5e5be;
+  --primary-btn: #e5091499;
+  --primary-btn-hover: #e50914;
+  --movie-price: #f5c518;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
+  background-color: var(--dark);
 }
 
 /* nav styles */
@@ -7,10 +22,31 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  margin: 1.6rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--font-info);
+}
+
+.nav-link a:hover {
+  color: var(--font-hover);
 }
 
 @media screen and (max-width: 596px) {
-  .nav-container {
+  .nav-container,
+  .nav-links-container {
     flex-direction: column;
     align-items: center;
   }
