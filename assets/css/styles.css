@@ -40,6 +40,11 @@ body {
   color: var(--font-info);
 }
 
+.nav-link img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 .nav-link a:hover {
   color: var(--font-hover);
 }
